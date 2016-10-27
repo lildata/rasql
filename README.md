@@ -19,7 +19,7 @@ in your RDMS.
 ;; "(SELECT * FROM \"ps_person\")"
 ```
 
-### Project
+### π projection
 
 The `project` function takes a relation and a vector of columns you want returned from the relation.
 
@@ -35,7 +35,7 @@ You can scope a projected column by explicitly defining the source relation. Thi
 ;; "(SELECT \"person\".emplid, \"person\".date_of_birth FROM ps_person \"person\")"
 ```
 
-### Select
+### σ selection
 
 The `select` function limits the rows returned according to the provided predicate. Predicates for `select`s and `join`s are expressed with vectors:
 
